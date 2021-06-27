@@ -1,0 +1,127 @@
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+section {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px rgb(255, 255, 255);
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+.main {
+  margin: 0;
+  width: 100%;
+  min-height: 50vh;
+  background: url(image/header.jpg);
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.main .content h3 {
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px white;
+}
+
+header {
+  z-index: 999;
+  position: fixed;
+  background: rgba(152, 222, 240, 0.301);
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s ease;
+}
+
+header.sticky {
+  background: rgba(71, 220, 240, 0.719);
+  padding: 15px 20px;
+}
+
+header .brand {
+  color: rgb(255, 0, 0);
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigation {
+  position: relative;
+}
+
+header .navigation a {
+  color: rgb(0, 0, 0);
+  font-size: 1.3em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+header .navigation a:hover {
+  color: #000000;
+}
+
+.judul {
+  text-align: center;
+}
+
+.scrollToTop-btn {
+  z-index: 999;
+  position: fixed;
+  background: #3a6cf4;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  right: 0;
+  bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 3px;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.scrollToTop-btn.active {
+  right: 20px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hak {
+  font-size: 15px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.hak a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(73, 226, 226);
+}
+
+.hak p {
+  color: #5e5e5e;
+}
